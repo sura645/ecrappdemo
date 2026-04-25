@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TaskFlow - Smart Todo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <h2>TaskFlow</h2>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#app">App</a>
+  </nav>
+</header>
+
+<!-- HERO LANDING -->
+<section class="hero">
+  <h1>Organize Your Life 🚀</h1>
+  <p>Plan smarter. Work faster. Stay focused.</p>
+  <button onclick="scrollToApp()">Start Now</button>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="features">
+  <div class="card">⚡ Fast & Simple</div>
+  <div class="card">💾 Saves Automatically</div>
+  <div class="card">📱 Mobile Friendly</div>
+</section>
+
+<!-- TODO APP -->
+<section id="app" class="app">
+  <h2>My Tasks</h2>
+
+  <div class="todo-input">
+    <input type="text" id="taskInput" placeholder="Enter a task...">
+    <button onclick="addTask()">Add</button>
+  </div>
+
+  <ul id="taskList"></ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
